@@ -1,0 +1,2163 @@
+Last login: Mon Aug  8 23:50:23 on ttys000
+kangzhidongdeMacBook-Pro:~ kang$ git -version
+Unknown option: -version
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+kangzhidongdeMacBook-Pro:~ kang$ git --version
+git version 2.7.4 (Apple Git-66)
+kangzhidongdeMacBook-Pro:~ kang$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+
+kangzhidongdeMacBook-Pro:~ kang$ git config --global 
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+
+kangzhidongdeMacBook-Pro:~ kang$ ls -al
+total 48
+drwxr-xr-x+ 33 kang  staff   1122  8  8 05:01 .
+drwxr-xr-x   6 root  admin    204  8  5 14:44 ..
+-r--------   1 kang  staff      9  8  5 14:42 .CFUserTextEncoding
+-rw-r--r--@  1 kang  staff  10244  8  7 23:51 .DS_Store
+drwx------  53 kang  staff   1802  8  8 09:00 .Trash
+drwxr-xr-x  12 kang  staff    408  8  7 19:57 .android
+-rw-r--r--   1 kang  staff   1106  8  8 23:58 .bash_history
+drwxr-xr-x  42 kang  staff   1428  8  9 00:16 .bash_sessions
+drwx------   5 kang  staff    170  8  8 05:01 .config
+drwxr-xr-x   3 kang  staff    102  8  7 20:25 .docker
+drwxr-xr-x   8 kang  staff    272  8  5 21:46 .eclipse
+-rw-------   1 kang  staff     16  8  7 17:30 .emulator_console_auth_token
+drwxr-xr-x   5 kang  staff    170  8  7 16:38 .gradle
+drwxr-xr-x   3 kang  staff    102  8  8 05:01 .local
+drwxr-xr-x   6 kang  staff    204  8  8 03:48 .oracle_jre_usage
+drwxr-xr-x   8 kang  staff    272  8  7 23:32 .p2
+drwxr-xr-x  40 kang  staff   1360  8  8 21:00 .sogouinput
+drwx------   3 kang  staff    102  8  8 03:03 .ssh
+drwxr-xr-x   6 kang  staff    204  8  6 19:00 .subversion
+drwxr-xr-x   3 kang  staff    102  8  5 21:33 .tooling
+drwxr-xr-x   3 kang  staff    102  8  7 16:38 AndroidStudioProjects
+drwx------   5 kang  staff    170  8  5 17:16 Applications
+drwxr-xr-x@  5 kang  staff    170  8  7 19:49 Applications (Parallels)
+drwx------+  6 kang  staff    204  8  7 23:18 Desktop
+drwx------+ 12 kang  staff    408  8  8 18:38 Documents
+drwx------+ 26 kang  staff    884  8  8 17:05 Downloads
+drwx------@ 58 kang  staff   1972  8  8 03:29 Library
+drwx------+  3 kang  staff    102  8  5 14:42 Movies
+drwx------+  4 kang  staff    136  8  5 15:41 Music
+drwx------+  6 kang  staff    204  8  6 20:14 Pictures
+drwxr-xr-x+  5 kang  staff    170  8  5 14:42 Public
+drwxr-xr-x   4 kang  staff    136  8  7 23:35 eclipse
+drwxr-xr-x   3 kang  staff    102  8  7 19:48 ios
+kangzhidongdeMacBook-Pro:~ kang$ git config --global kang
+error: key does not contain a section: kang
+kangzhidongdeMacBook-Pro:~ kang$ git config --global "kang"
+error: key does not contain a section: kang
+kangzhidongdeMacBook-Pro:~ kang$ git config --global user.name "kang"
+kangzhidongdeMacBook-Pro:~ kang$ git config --global user.email "kzd666@163.com"
+kangzhidongdeMacBook-Pro:~ kang$ ls -al
+total 56
+drwxr-xr-x+ 34 kang  staff   1156  8  9 09:01 .
+drwxr-xr-x   6 root  admin    204  8  5 14:44 ..
+-r--------   1 kang  staff      9  8  5 14:42 .CFUserTextEncoding
+-rw-r--r--@  1 kang  staff  10244  8  7 23:51 .DS_Store
+drwx------  53 kang  staff   1802  8  8 09:00 .Trash
+drwxr-xr-x  12 kang  staff    408  8  7 19:57 .android
+-rw-r--r--   1 kang  staff   1106  8  8 23:58 .bash_history
+drwxr-xr-x  42 kang  staff   1428  8  9 00:16 .bash_sessions
+drwx------   5 kang  staff    170  8  8 05:01 .config
+drwxr-xr-x   3 kang  staff    102  8  7 20:25 .docker
+drwxr-xr-x   8 kang  staff    272  8  5 21:46 .eclipse
+-rw-------   1 kang  staff     16  8  7 17:30 .emulator_console_auth_token
+-rw-r--r--   1 kang  staff     44  8  9 09:01 .gitconfig
+drwxr-xr-x   5 kang  staff    170  8  7 16:38 .gradle
+drwxr-xr-x   3 kang  staff    102  8  8 05:01 .local
+drwxr-xr-x   6 kang  staff    204  8  8 03:48 .oracle_jre_usage
+drwxr-xr-x   8 kang  staff    272  8  9 08:57 .p2
+drwxr-xr-x  40 kang  staff   1360  8  8 21:00 .sogouinput
+drwx------   3 kang  staff    102  8  8 03:03 .ssh
+drwxr-xr-x   6 kang  staff    204  8  6 19:00 .subversion
+drwxr-xr-x   3 kang  staff    102  8  5 21:33 .tooling
+drwxr-xr-x   3 kang  staff    102  8  7 16:38 AndroidStudioProjects
+drwx------   5 kang  staff    170  8  5 17:16 Applications
+drwxr-xr-x@  5 kang  staff    170  8  7 19:49 Applications (Parallels)
+drwx------+  6 kang  staff    204  8  7 23:18 Desktop
+drwx------+ 12 kang  staff    408  8  8 18:38 Documents
+drwx------+ 26 kang  staff    884  8  8 17:05 Downloads
+drwx------@ 58 kang  staff   1972  8  8 03:29 Library
+drwx------+  3 kang  staff    102  8  5 14:42 Movies
+drwx------+  4 kang  staff    136  8  5 15:41 Music
+drwx------+  6 kang  staff    204  8  6 20:14 Pictures
+drwxr-xr-x+  5 kang  staff    170  8  5 14:42 Public
+drwxr-xr-x   4 kang  staff    136  8  7 23:35 eclipse
+drwxr-xr-x   3 kang  staff    102  8  7 19:48 ios
+kangzhidongdeMacBook-Pro:~ kang$ vi .gitconfig
+kangzhidongdeMacBook-Pro:~ kang$ git config --global color.ui auto
+kangzhidongdeMacBook-Pro:~ kang$ vi .gitconfig
+kangzhidongdeMacBook-Pro:~ kang$ ssh -keygen 
+Bad escape character 'ygen'.
+kangzhidongdeMacBook-Pro:~ kang$ ssh-keygen 
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/kang/.ssh/id_rsa): ^C
+kangzhidongdeMacBook-Pro:~ kang$ ssh-keygen -t rsa -C "kzd666@163.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/kang/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/kang/.ssh/id_rsa.
+Your public key has been saved in /Users/kang/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:P9kn77ryzuSTfbUiBOwOt2VUplEWafVpp6AU6IN70X0 kzd666@163.com
+The key's randomart image is:
++---[RSA 2048]----+
+|         .. .++. |
+|        .  o.=  o|
+|       o....B  oo|
+|      . ++.+..E..|
+|       .So+  ..  |
+|      ...+ *    .|
+|       .+ O +o. o|
+|         o.*o=...|
+|           +O=+. |
++----[SHA256]-----+
+kangzhidongdeMacBook-Pro:~ kang$ ls-al
+-bash: ls-al: command not found
+kangzhidongdeMacBook-Pro:~ kang$ ls -al
+total 64
+drwxr-xr-x+ 35 kang  staff   1190  8  9 09:04 .
+drwxr-xr-x   6 root  admin    204  8  5 14:44 ..
+-r--------   1 kang  staff      9  8  5 14:42 .CFUserTextEncoding
+-rw-r--r--@  1 kang  staff  10244  8  7 23:51 .DS_Store
+drwx------  53 kang  staff   1802  8  8 09:00 .Trash
+drwxr-xr-x  12 kang  staff    408  8  7 19:57 .android
+-rw-r--r--   1 kang  staff   1106  8  8 23:58 .bash_history
+drwxr-xr-x  42 kang  staff   1428  8  9 00:16 .bash_sessions
+drwx------   5 kang  staff    170  8  8 05:01 .config
+drwxr-xr-x   3 kang  staff    102  8  7 20:25 .docker
+drwxr-xr-x   8 kang  staff    272  8  5 21:46 .eclipse
+-rw-------   1 kang  staff     16  8  7 17:30 .emulator_console_auth_token
+-rw-r--r--   1 kang  staff     63  8  9 09:04 .gitconfig
+drwxr-xr-x   5 kang  staff    170  8  7 16:38 .gradle
+drwxr-xr-x   3 kang  staff    102  8  8 05:01 .local
+drwxr-xr-x   6 kang  staff    204  8  8 03:48 .oracle_jre_usage
+drwxr-xr-x   8 kang  staff    272  8  9 08:57 .p2
+drwxr-xr-x  40 kang  staff   1360  8  8 21:00 .sogouinput
+drwx------   5 kang  staff    170  8  9 09:17 .ssh
+drwxr-xr-x   6 kang  staff    204  8  6 19:00 .subversion
+drwxr-xr-x   3 kang  staff    102  8  5 21:33 .tooling
+-rw-------   1 kang  staff    580  8  9 09:04 .viminfo
+drwxr-xr-x   3 kang  staff    102  8  7 16:38 AndroidStudioProjects
+drwx------   5 kang  staff    170  8  5 17:16 Applications
+drwxr-xr-x@  5 kang  staff    170  8  7 19:49 Applications (Parallels)
+drwx------+  6 kang  staff    204  8  7 23:18 Desktop
+drwx------+ 12 kang  staff    408  8  8 18:38 Documents
+drwx------+ 26 kang  staff    884  8  8 17:05 Downloads
+drwx------@ 58 kang  staff   1972  8  8 03:29 Library
+drwx------+  3 kang  staff    102  8  5 14:42 Movies
+drwx------+  4 kang  staff    136  8  5 15:41 Music
+drwx------+  6 kang  staff    204  8  6 20:14 Pictures
+drwxr-xr-x+  5 kang  staff    170  8  5 14:42 Public
+drwxr-xr-x   4 kang  staff    136  8  7 23:35 eclipse
+drwxr-xr-x   3 kang  staff    102  8  7 19:48 ios
+kangzhidongdeMacBook-Pro:~ kang$ cd .ssh
+kangzhidongdeMacBook-Pro:.ssh kang$ ls
+id_rsa		id_rsa.pub	known_hosts
+kangzhidongdeMacBook-Pro:.ssh kang$ vi id_rsa
+kangzhidongdeMacBook-Pro:.ssh kang$ vi id_rsa.pub 
+kangzhidongdeMacBook-Pro:.ssh kang$ cat  id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWbpCv9biRq2l+//rlkhiuOaaoPdDWmo1CJgYJKV6Yxp0faPa5ycvVU8vQoDdKQSMI6xfd9RIpbIC7fvFVRGliQMzaoC0eXfkFxwJwK8NeoyBqb486jY6++yO85C1zQRjHKC+dz+wi764AMfVbDaBcy77B1gtnIDdiG2OubBBjEPuYouUKQYQFqIrGZW73auek8iNaOmFWPXQx4Sncr0IevlJJEm9q14OYdehosWbi6J8mADS+Zqah9/zWAnp+WL+ubBDbFAt0cpQBDYpAUhytcwNC538W0zp8jL6i0XgaMFZKvO0dje06M6/5e0+j3ndvf1v4lJKsAQI2Wz/Prvy9 kzd666@163.com
+kangzhidongdeMacBook-Pro:.ssh kang$ ssh -Tgit@github.com
+Warning: Identity file t@github.com not accessible: No such file or directory.
+usage: ssh [-1246AaCfGgKkMNnqsTtVvXxYy] [-b bind_address] [-c cipher_spec]
+           [-D [bind_address:]port] [-E log_file] [-e escape_char]
+           [-F configfile] [-I pkcs11] [-i identity_file]
+           [-L [bind_address:]port:host:hostport] [-l login_name] [-m mac_spec]
+           [-O ctl_cmd] [-o option] [-p port]
+           [-Q cipher | cipher-auth | mac | kex | key]
+           [-R [bind_address:]port:host:hostport] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] [user@]hostname [command]
+kangzhidongdeMacBook-Pro:.ssh kang$ cd~
+-bash: cd~: command not found
+kangzhidongdeMacBook-Pro:.ssh kang$ cd ~
+kangzhidongdeMacBook-Pro:~ kang$ ls
+AndroidStudioProjects		Desktop				Library				Pictures			ios
+Applications			Documents			Movies				Public
+Applications (Parallels)	Downloads			Music				eclipse
+kangzhidongdeMacBook-Pro:~ kang$ ls-al
+-bash: ls-al: command not found
+kangzhidongdeMacBook-Pro:~ kang$ ls -al
+total 64
+drwxr-xr-x+ 35 kang  staff   1190  8  9 09:22 .
+drwxr-xr-x   6 root  admin    204  8  5 14:44 ..
+-r--------   1 kang  staff      9  8  5 14:42 .CFUserTextEncoding
+-rw-r--r--@  1 kang  staff  10244  8  7 23:51 .DS_Store
+drwx------  53 kang  staff   1802  8  8 09:00 .Trash
+drwxr-xr-x  12 kang  staff    408  8  7 19:57 .android
+-rw-r--r--   1 kang  staff   1106  8  8 23:58 .bash_history
+drwxr-xr-x  42 kang  staff   1428  8  9 00:16 .bash_sessions
+drwx------   5 kang  staff    170  8  8 05:01 .config
+drwxr-xr-x   3 kang  staff    102  8  7 20:25 .docker
+drwxr-xr-x   8 kang  staff    272  8  5 21:46 .eclipse
+-rw-------   1 kang  staff     16  8  7 17:30 .emulator_console_auth_token
+-rw-r--r--   1 kang  staff     63  8  9 09:04 .gitconfig
+drwxr-xr-x   5 kang  staff    170  8  7 16:38 .gradle
+drwxr-xr-x   3 kang  staff    102  8  8 05:01 .local
+drwxr-xr-x   6 kang  staff    204  8  8 03:48 .oracle_jre_usage
+drwxr-xr-x   8 kang  staff    272  8  9 08:57 .p2
+drwxr-xr-x  40 kang  staff   1360  8  8 21:00 .sogouinput
+drwx------   5 kang  staff    170  8  9 09:22 .ssh
+drwxr-xr-x   6 kang  staff    204  8  6 19:00 .subversion
+drwxr-xr-x   3 kang  staff    102  8  5 21:33 .tooling
+-rw-------   1 kang  staff    829  8  9 09:22 .viminfo
+drwxr-xr-x   3 kang  staff    102  8  7 16:38 AndroidStudioProjects
+drwx------   5 kang  staff    170  8  5 17:16 Applications
+drwxr-xr-x@  5 kang  staff    170  8  7 19:49 Applications (Parallels)
+drwx------+  6 kang  staff    204  8  7 23:18 Desktop
+drwx------+ 12 kang  staff    408  8  8 18:38 Documents
+drwx------+ 26 kang  staff    884  8  8 17:05 Downloads
+drwx------@ 58 kang  staff   1972  8  8 03:29 Library
+drwx------+  3 kang  staff    102  8  5 14:42 Movies
+drwx------+  4 kang  staff    136  8  5 15:41 Music
+drwx------+  6 kang  staff    204  8  6 20:14 Pictures
+drwxr-xr-x+  5 kang  staff    170  8  5 14:42 Public
+drwxr-xr-x   4 kang  staff    136  8  7 23:35 eclipse
+drwxr-xr-x   3 kang  staff    102  8  7 19:48 ios
+kangzhidongdeMacBook-Pro:~ kang$ ssh -T git@github.com
+The authenticity of host 'github.com (192.30.253.113)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.253.113' (RSA) to the list of known hosts.
+Identity added: /Users/kang/.ssh/id_rsa ((null))
+Hi KangZhiDong! You've successfully authenticated, but GitHub does not provide shell access.
+kangzhidongdeMacBook-Pro:~ kang$ git clone https://github.com/KangZhiDong/LearningGitandGitHub.git
+Cloning into 'LearningGitandGitHub'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+kangzhidongdeMacBook-Pro:~ kang$ ls
+AndroidStudioProjects		Downloads			Pictures
+Applications			LearningGitandGitHub		Public
+Applications (Parallels)	Library				eclipse
+Desktop				Movies				ios
+Documents			Music
+kangzhidongdeMacBook-Pro:~ kang$ ls-al
+-bash: ls-al: command not found
+kangzhidongdeMacBook-Pro:~ kang$ ls -al
+total 64
+drwxr-xr-x+ 36 kang  staff   1224  8  9 10:20 .
+drwxr-xr-x   6 root  admin    204  8  5 14:44 ..
+-r--------   1 kang  staff      9  8  5 14:42 .CFUserTextEncoding
+-rw-r--r--@  1 kang  staff  10244  8  7 23:51 .DS_Store
+drwx------  53 kang  staff   1802  8  8 09:00 .Trash
+drwxr-xr-x  12 kang  staff    408  8  7 19:57 .android
+-rw-r--r--   1 kang  staff   1106  8  8 23:58 .bash_history
+drwxr-xr-x  42 kang  staff   1428  8  9 00:16 .bash_sessions
+drwx------   5 kang  staff    170  8  8 05:01 .config
+drwxr-xr-x   3 kang  staff    102  8  7 20:25 .docker
+drwxr-xr-x   8 kang  staff    272  8  5 21:46 .eclipse
+-rw-------   1 kang  staff     16  8  7 17:30 .emulator_console_auth_token
+-rw-r--r--   1 kang  staff     63  8  9 09:04 .gitconfig
+drwxr-xr-x   5 kang  staff    170  8  7 16:38 .gradle
+drwxr-xr-x   3 kang  staff    102  8  8 05:01 .local
+drwxr-xr-x   6 kang  staff    204  8  8 03:48 .oracle_jre_usage
+drwxr-xr-x   8 kang  staff    272  8  9 08:57 .p2
+drwxr-xr-x  40 kang  staff   1360  8  8 21:00 .sogouinput
+drwx------   5 kang  staff    170  8  9 09:22 .ssh
+drwxr-xr-x   6 kang  staff    204  8  6 19:00 .subversion
+drwxr-xr-x   3 kang  staff    102  8  5 21:33 .tooling
+-rw-------   1 kang  staff    829  8  9 09:22 .viminfo
+drwxr-xr-x   3 kang  staff    102  8  7 16:38 AndroidStudioProjects
+drwx------   5 kang  staff    170  8  5 17:16 Applications
+drwxr-xr-x@  5 kang  staff    170  8  7 19:49 Applications (Parallels)
+drwx------+  6 kang  staff    204  8  7 23:18 Desktop
+drwx------+ 12 kang  staff    408  8  8 18:38 Documents
+drwx------+ 26 kang  staff    884  8  8 17:05 Downloads
+drwxr-xr-x   4 kang  staff    136  8  9 10:20 LearningGitandGitHub
+drwx------@ 58 kang  staff   1972  8  8 03:29 Library
+drwx------+  3 kang  staff    102  8  5 14:42 Movies
+drwx------+  4 kang  staff    136  8  5 15:41 Music
+drwx------+  6 kang  staff    204  8  6 20:14 Pictures
+drwxr-xr-x+  5 kang  staff    170  8  5 14:42 Public
+drwxr-xr-x   4 kang  staff    136  8  7 23:35 eclipse
+drwxr-xr-x   3 kang  staff    102  8  7 19:48 ios
+kangzhidongdeMacBook-Pro:~ kang$ cd LearningGitandGitHub/
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ ls
+README.md
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ ls -al
+total 8
+drwxr-xr-x   4 kang  staff   136  8  9 10:20 .
+drwxr-xr-x+ 36 kang  staff  1224  8  9 10:20 ..
+drwxr-xr-x  13 kang  staff   442  8  9 10:20 .git
+-rw-r--r--   1 kang  staff   126  8  9 10:20 README.md
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ vi hello_word.php
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ vi hello_word.php
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	hello_word.php
+
+nothing added to commit but untracked files present (use "git add" to track)
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ git add hello_word.php 
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ ls
+README.md	hello_word.php
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   hello_word.php
+
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ git log
+commit 4b798441e32ef15ff9656144fb478285ce7c0424
+Author: 康智冬 <kzd666@163.com>
+Date:   Tue Aug 9 10:00:04 2016 +0800
+
+    Initial commit
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ git commit -m "Add hello world script by php"
+[master 1952f54] Add hello world script by php
+ 1 file changed, 3 insertions(+)
+ create mode 100644 hello_word.php
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ git log
+commit 1952f5439ac1b53efc104bb25469afc0d7edae33
+Author: kang <kzd666@163.com>
+Date:   Tue Aug 9 10:33:40 2016 +0800
+
+    Add hello world script by php
+
+commit 4b798441e32ef15ff9656144fb478285ce7c0424
+Author: 康智冬 <kzd666@163.com>
+Date:   Tue Aug 9 10:00:04 2016 +0800
+
+    Initial commit
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': KangZhiDong
+Password for 'https://KangZhiDong@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 316 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/KangZhiDong/LearningGitandGitHub.git
+   4b79844..1952f54  master -> master
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ cd~
+-bash: cd~: command not found
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ cd ~
+kangzhidongdeMacBook-Pro:~ kang$ mkdir git-tutorial
+kangzhidongdeMacBook-Pro:~ kang$ ls
+AndroidStudioProjects		Downloads			Pictures
+Applications			LearningGitandGitHub		Public
+Applications (Parallels)	Library				eclipse
+Desktop				Movies				git-tutorial
+Documents			Music				ios
+kangzhidongdeMacBook-Pro:~ kang$ cd git-tutorial/
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git init
+Initialized empty Git repository in /Users/kang/git-tutorial/.git/
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cd /Users/kang/git-tutorial/.git/
+kangzhidongdeMacBook-Pro:.git kang$ ls
+HEAD		config		hooks		objects
+branches	description	info		refs
+kangzhidongdeMacBook-Pro:.git kang$ git status
+fatal: This operation must be run in a work tree
+kangzhidongdeMacBook-Pro:.git kang$ cd ..
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+kangzhidongdeMacBook-Pro:git-tutorial kang$ touch README.md
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git add README.md 
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README.md
+
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git commit -m "First commit"
+[master (root-commit) 59dac23] First commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git clone https://github.com/KangZhiDong/kangzhidong.github.io.git
+Cloning into 'kangzhidong.github.io'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+kangzhidongdeMacBook-Pro:git-tutorial kang$ ls
+README.md		kangzhidong.github.io
+kangzhidongdeMacBook-Pro:git-tutorial kang$ del kangzhidong.github.io
+-bash: del: command not found
+kangzhidongdeMacBook-Pro:git-tutorial kang$ move rm kangzhidong.github.io/
+-bash: move: command not found
+kangzhidongdeMacBook-Pro:git-tutorial kang$ rm kangzhidong.github.io/
+rm: kangzhidong.github.io/: is a directory
+kangzhidongdeMacBook-Pro:git-tutorial kang$ rmdir kangzhidong.github.io/
+rmdir: kangzhidong.github.io/: Directory not empty
+kangzhidongdeMacBook-Pro:git-tutorial kang$ rm -rf kangzhidong.github.io/
+kangzhidongdeMacBook-Pro:git-tutorial kang$ ls
+README.md
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cd ..
+kangzhidongdeMacBook-Pro:~ kang$ git clone https://github.com/KangZhiDong/kangzhidong.github.io.git
+Cloning into 'kangzhidong.github.io'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+kangzhidongdeMacBook-Pro:~ kang$ cd kangzhidong.github.io/
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ touch index.html
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ open index.html 
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git add .
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   index.html
+
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git commit -m "更新index.html，编写博文测试"
+[master (root-commit) 0f6ff13] 更新index.html，编写博文测试
+ 1 file changed, 6 insertions(+)
+ create mode 100644 index.html
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 336 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/KangZhiDong/kangzhidong.github.io.git
+ * [new branch]      master -> master
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ ping https://kangzhidong.github.io/
+ping: cannot resolve https://kangzhidong.github.io/: Unknown host
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ ping www.kangzhidong.github.io/
+ping: cannot resolve www.kangzhidong.github.io/: Unknown host
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ ping www.kangzhidong.github.io
+PING prod.github.map.fastlylb.net (151.101.100.133): 56 data bytes
+64 bytes from 151.101.100.133: icmp_seq=0 ttl=42 time=206.267 ms
+64 bytes from 151.101.100.133: icmp_seq=1 ttl=42 time=384.335 ms
+64 bytes from 151.101.100.133: icmp_seq=2 ttl=42 time=161.722 ms
+^C
+--- prod.github.map.fastlylb.net ping statistics ---
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 161.722/250.775/384.335/96.176 ms
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ ping https://kangzhidong.github.io
+PING prod.github.map.fastlylb.net (151.101.100.133): 56 data bytes
+64 bytes from 151.101.100.133: icmp_seq=0 ttl=42 time=160.706 ms
+64 bytes from 151.101.100.133: icmp_seq=1 ttl=42 time=258.628 ms
+^C
+--- prod.github.map.fastlylb.net ping statistics ---
+2 packets transmitted, 2 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 160.706/209.667/258.628/48.961 ms
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ touch CNAME
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git add .
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   CNAME
+
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git commit -m "添加CNAME文件"
+[master c9222f8] 添加CNAME文件
+ 1 file changed, 1 insertion(+)
+ create mode 100644 CNAME
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 302 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/KangZhiDong/kangzhidong.github.io.git
+   0f6ff13..c9222f8  master -> master
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ open CNAME
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git add .
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   CNAME
+
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Everything up-to-date
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Everything up-to-date
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+To https://github.com/KangZhiDong/kangzhidong.github.io.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/KangZhiDong/kangzhidong.github.io.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   CNAME
+
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git commit -m "添加CNAME"
+[master 3a785df] 添加CNAME
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+To https://github.com/KangZhiDong/kangzhidong.github.io.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/KangZhiDong/kangzhidong.github.io.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git push --help
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git push -u origin master
+To https://github.com/KangZhiDong/kangzhidong.github.io.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/KangZhiDong/kangzhidong.github.io.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git push --help
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git push origin master
+To https://github.com/KangZhiDong/kangzhidong.github.io.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/KangZhiDong/kangzhidong.github.io.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git fetch origin  
+remote: Counting objects: 2, done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 2 (delta 0), reused 1 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), done.
+From https://github.com/KangZhiDong/kangzhidong.github.io
+   c9222f8..b15a884  master     -> origin/master
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commit each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+nothing to commit, working directory clean
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git merge origin/master
+CONFLICT (modify/delete): CNAME deleted in origin/master and modified in HEAD. Version HEAD of CNAME left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git push --help
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git commit 
+U	CNAME
+error: commit is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commit each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+
+Unmerged paths:
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+
+	deleted by them: CNAME
+
+no changes added to commit (use "git add" and/or "git commit -a")
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git rm CNAME 
+CNAME: needs merge
+rm 'CNAME'
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commit each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+	deleted:    CNAME
+
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git commit
+[master 03031a2] Merge remote-tracking branch 'origin/master'
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git commit -m "删除CNAM“E
+> 
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git commit -m "删除CNAM"
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git push 
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 492 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/KangZhiDong/kangzhidong.github.io.git
+   b15a884..03031a2  master -> master
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ touch NAME
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ open NAME 
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git commit -m "添加CNAME"
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+	NAME
+
+nothing added to commit but untracked files present
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ mv NAME CNAME
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git add CNAME 
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git commit -m "添加CAME"
+[master 5e5393b] 添加CAME
+ 1 file changed, 1 insertion(+)
+ create mode 100644 CNAME
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 291 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/KangZhiDong/kangzhidong.github.io.git
+   03031a2..5e5393b  master -> master
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ ping kangzhidong.github.io
+PING prod.github.map.fastlylb.net (151.101.100.133): 56 data bytes
+64 bytes from 151.101.100.133: icmp_seq=0 ttl=42 time=283.006 ms
+64 bytes from 151.101.100.133: icmp_seq=1 ttl=42 time=168.443 ms
+^C
+--- prod.github.map.fastlylb.net ping statistics ---
+2 packets transmitted, 2 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 168.443/225.724/283.006/57.282 ms
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ ping fofire.com
+PING fofire.com (151.101.100.133): 56 data bytes
+64 bytes from 151.101.100.133: icmp_seq=0 ttl=42 time=160.764 ms
+64 bytes from 151.101.100.133: icmp_seq=1 ttl=42 time=157.638 ms
+^C
+--- fofire.com ping statistics ---
+3 packets transmitted, 2 packets received, 33.3% packet loss
+round-trip min/avg/max/stddev = 157.638/159.201/160.764/1.563 ms
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git add .
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   index.html
+
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Everything up-to-date
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git commit 
+error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   index.html
+
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Everything up-to-date
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git commit -m "js跳转代码到CSDN博客"
+[master e529358] js跳转代码到CSDN博客
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 404 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/KangZhiDong/kangzhidong.github.io.git
+   5e5393b..e529358  master -> master
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+kangzhidongdeMacBook-Pro:kangzhidong.github.io kang$ cd ..
+kangzhidongdeMacBook-Pro:~ kang$ ls
+AndroidStudioProjects		LearningGitandGitHub		eclipse
+Applications			Library				git-tutorial
+Applications (Parallels)	Movies				ios
+Desktop				Music				kangzhidong.github.io
+Documents			Pictures
+Downloads			Public
+kangzhidongdeMacBook-Pro:~ kang$ cd git-tutorial/
+kangzhidongdeMacBook-Pro:git-tutorial kang$ push status
+-bash: push: command not found
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git status
+On branch master
+nothing to commit, working directory clean
+kangzhidongdeMacBook-Pro:git-tutorial kang$ touch 七夕快乐
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git add .
+kangzhidongdeMacBook-Pro:git-tutorial kang$ ls
+README.md	七夕快乐
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git commit
+[master 7a53e9f] 突然想起来今天七夕节，汪汪
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "\344\270\203\345\244\225\345\277\253\344\271\220"
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git status
+On branch master
+nothing to commit, working directory clean
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+kangzhidongdeMacBook-Pro:git-tutorial kang$ ls
+README.md	七夕快乐
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git log
+commit 7a53e9fe135340d1f59a1c7fb472974735860669
+Author: kang <kzd666@163.com>
+Date:   Tue Aug 9 15:54:42 2016 +0800
+
+    突然想起来今天七夕节，汪汪
+    
+    七夕快乐！
+
+commit 59dac2365d9df2f0a7934b9f241802308d58e195
+Author: kang <kzd666@163.com>
+Date:   Tue Aug 9 11:18:35 2016 +0800
+
+    First commit
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git status
+On branch master
+nothing to commit, working directory clean
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git log --pretty=short
+commit 7a53e9fe135340d1f59a1c7fb472974735860669
+Author: kang <kzd666@163.com>
+
+    突然想起来今天七夕节，汪汪
+
+commit 59dac2365d9df2f0a7934b9f241802308d58e195
+Author: kang <kzd666@163.com>
+
+    First commit
+kangzhidongdeMacBook-Pro:git-tutorial kang$ ls
+README.md	七夕快乐
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git log README.md 
+commit 59dac2365d9df2f0a7934b9f241802308d58e195
+Author: kang <kzd666@163.com>
+Date:   Tue Aug 9 11:18:35 2016 +0800
+
+    First commit
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git log -p
+commit 7a53e9fe135340d1f59a1c7fb472974735860669
+Author: kang <kzd666@163.com>
+Date:   Tue Aug 9 15:54:42 2016 +0800
+
+    突然想起来今天七夕节，汪汪
+    
+    七夕快乐！
+
+diff --git "a/\344\270\203\345\244\225\345\277\253\344\271\220" "b/\344\270\203\345\244\225\345\277\253\344\271\220"
+new file mode 100644
+index 0000000..e69de29
+
+commit 59dac2365d9df2f0a7934b9f241802308d58e195
+Author: kang <kzd666@163.com>
+Date:   Tue Aug 9 11:18:35 2016 +0800
+
+    First commit
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..e69de29
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git diff
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git diff
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git add README.md 
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git diff
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git diff HEAD
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git branch
+* master
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git checkout -b feature-A
+Switched to a new branch 'feature-A'
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git checkout -b feature-A
+fatal: A branch named 'feature-A' already exists.
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git branch -b feature-A
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged | --no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    --set-upstream        change upstream info
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      Unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    --list                list branch names
+    -l, --create-reflog   create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git branch feature-A
+fatal: A branch named 'feature-A' already exists.
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git branch  feature-A
+fatal: A branch named 'feature-A' already exists.
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git branch
+* feature-A
+  master
+kangzhidongdeMacBook-Pro:git-tutorial kang$ ls
+README.md	七夕快乐
+kangzhidongdeMacBook-Pro:git-tutorial kang$ vi
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cat README.md 
+kangzhidongdeMacBook-Pro:git-tutorial kang$ vi README.md 
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git add README.md 
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git commit -m "Add feature-A" 
+[feature-A 4023359] Add feature-A
+ 1 file changed, 4 insertions(+)
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cat README.md 
+#Git教程
+
+
+	- feature-A
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git checkout master
+Switched to branch 'master'
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cat README.md 
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git checkout -
+Switched to branch 'feature-A'
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git checkout master
+Switched to branch 'master'
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git merge --no-ff feature-A
+Merge made by the 'recursive' strategy.
+ README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cat README.md 
+#Git教程
+
+
+	- feature-A
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git log --graph
+*   commit 0fa1355f2d840c6c13451d6a1cff4b8f1131ea6d
+|\  Merge: 7a53e9f 4023359
+| | Author: kang <kzd666@163.com>
+| | Date:   Tue Aug 9 17:57:39 2016 +0800
+| | 
+| |     Merge branch 'feature-A'
+| |   
+| * commit 40233594b2d5d3fed82b1d17e4e8ab4753069824
+|/  Author: kang <kzd666@163.com>
+|   Date:   Tue Aug 9 17:48:05 2016 +0800
+|   
+|       Add feature-A
+|  
+* commit 7a53e9fe135340d1f59a1c7fb472974735860669
+| Author: kang <kzd666@163.com>
+| Date:   Tue Aug 9 15:54:42 2016 +0800
+| 
+|     突然想起来今天七夕节，汪汪
+|     
+|     七夕快乐！
+|  
+* commit 59dac2365d9df2f0a7934b9f241802308d58e195
+  Author: kang <kzd666@163.com>
+  Date:   Tue Aug 9 11:18:35 2016 +0800
+  
+      First commit
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git reset --hard 7a53e9fe135340d1f59a1c7fb472974735860669
+HEAD is now at 7a53e9f 突然想起来今天七夕节，汪汪
+kangzhidongdeMacBook-Pro:git-tutorial kang$ ls
+README.md	七夕快乐
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cat README.md 
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git checkout -b fix-B
+Switched to a new branch 'fix-B'
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git branch
+  feature-A
+* fix-B
+  master
+kangzhidongdeMacBook-Pro:git-tutorial kang$ vi README.md 
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git add README.md 
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git commit -m "Fix B"
+[fix-B 3b81dda] Fix B
+ 1 file changed, 4 insertions(+)
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git log --graph
+* commit 3b81dda47b3d43358badf3a0d5e9163b7ded9d2a
+| Author: kang <kzd666@163.com>
+| Date:   Tue Aug 9 18:06:37 2016 +0800
+| 
+|     Fix B
+|  
+* commit 7a53e9fe135340d1f59a1c7fb472974735860669
+| Author: kang <kzd666@163.com>
+| Date:   Tue Aug 9 15:54:42 2016 +0800
+| 
+|     突然想起来今天七夕节，汪汪
+|     
+|     七夕快乐！
+|  
+* commit 59dac2365d9df2f0a7934b9f241802308d58e195
+  Author: kang <kzd666@163.com>
+  Date:   Tue Aug 9 11:18:35 2016 +0800
+  
+      First commit
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git checkout master
+Switched to branch 'master'
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git log
+commit 7a53e9fe135340d1f59a1c7fb472974735860669
+Author: kang <kzd666@163.com>
+Date:   Tue Aug 9 15:54:42 2016 +0800
+
+    突然想起来今天七夕节，汪汪
+    
+    七夕快乐！
+
+commit 59dac2365d9df2f0a7934b9f241802308d58e195
+Author: kang <kzd666@163.com>
+Date:   Tue Aug 9 11:18:35 2016 +0800
+
+    First commit
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git checkout fix-B
+Switched to branch 'fix-B'
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git reflog
+3b81dda HEAD@{0}: checkout: moving from master to fix-B
+7a53e9f HEAD@{1}: checkout: moving from fix-B to master
+3b81dda HEAD@{2}: commit: Fix B
+7a53e9f HEAD@{3}: checkout: moving from master to fix-B
+7a53e9f HEAD@{4}: reset: moving to 7a53e9fe135340d1f59a1c7fb472974735860669
+0fa1355 HEAD@{5}: merge feature-A: Merge made by the 'recursive' strategy.
+7a53e9f HEAD@{6}: checkout: moving from feature-A to master
+4023359 HEAD@{7}: checkout: moving from master to feature-A
+7a53e9f HEAD@{8}: checkout: moving from feature-A to master
+4023359 HEAD@{9}: commit: Add feature-A
+7a53e9f HEAD@{10}: checkout: moving from master to feature-A
+7a53e9f HEAD@{11}: commit: 突然想起来今天七夕节，汪汪
+59dac23 HEAD@{12}: commit (initial): First commit
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git reset --hard 7a53e9f
+HEAD is now at 7a53e9f 突然想起来今天七夕节，汪汪
+kangzhidongdeMacBook-Pro:git-tutorial kang$ ls
+README.md	七夕快乐
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cat README.md 
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git branch
+  feature-A
+* fix-B
+  master
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git merge --no-ff fix-B
+Already up-to-date.
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git reset --hard 0fa1355
+HEAD is now at 0fa1355 Merge branch 'feature-A'
+kangzhidongdeMacBook-Pro:git-tutorial kang$ ls
+README.md	七夕快乐
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cat README.md 
+#Git教程
+
+
+	- feature-A
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git merge --no-ff fix-B
+Already up-to-date.
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cat README.md 
+#Git教程
+
+
+	- feature-A
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git checkout master
+Switched to branch 'master'
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cat README.md 
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git checkout fix-B
+Switched to branch 'fix-B'
+kangzhidongdeMacBook-Pro:git-tutorial kang$ LS
+README.md	七夕快乐
+kangzhidongdeMacBook-Pro:git-tutorial kang$ CAT README.md 
+#Git教程
+
+
+	- feature-A
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git reset --hard 0fa1355
+HEAD is now at 0fa1355 Merge branch 'feature-A'
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git reflog
+0fa1355 HEAD@{0}: checkout: moving from master to fix-B
+7a53e9f HEAD@{1}: checkout: moving from fix-B to master
+0fa1355 HEAD@{2}: reset: moving to 0fa1355
+7a53e9f HEAD@{3}: reset: moving to 7a53e9f
+3b81dda HEAD@{4}: checkout: moving from master to fix-B
+7a53e9f HEAD@{5}: checkout: moving from fix-B to master
+3b81dda HEAD@{6}: commit: Fix B
+7a53e9f HEAD@{7}: checkout: moving from master to fix-B
+7a53e9f HEAD@{8}: reset: moving to 7a53e9fe135340d1f59a1c7fb472974735860669
+0fa1355 HEAD@{9}: merge feature-A: Merge made by the 'recursive' strategy.
+7a53e9f HEAD@{10}: checkout: moving from feature-A to master
+4023359 HEAD@{11}: checkout: moving from master to feature-A
+7a53e9f HEAD@{12}: checkout: moving from feature-A to master
+4023359 HEAD@{13}: commit: Add feature-A
+7a53e9f HEAD@{14}: checkout: moving from master to feature-A
+7a53e9f HEAD@{15}: commit: 突然想起来今天七夕节，汪汪
+59dac23 HEAD@{16}: commit (initial): First commit
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git reset --hard 3b81dda
+HEAD is now at 3b81dda Fix B
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git branch
+  feature-A
+* fix-B
+  master
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cat README.md 
+#Git教程
+
+
+	- fix-B
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git checkout master
+Switched to branch 'master'
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git merge --no-ff fix-B
+Merge made by the 'recursive' strategy.
+ README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git reset --hard 3b81dda
+HEAD is now at 3b81dda Fix B
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git reflog
+3b81dda HEAD@{0}: reset: moving to 3b81dda
+c4be3d2 HEAD@{1}: merge fix-B: Merge made by the 'recursive' strategy.
+7a53e9f HEAD@{2}: checkout: moving from fix-B to master
+3b81dda HEAD@{3}: reset: moving to 3b81dda
+0fa1355 HEAD@{4}: checkout: moving from master to fix-B
+7a53e9f HEAD@{5}: checkout: moving from fix-B to master
+0fa1355 HEAD@{6}: reset: moving to 0fa1355
+7a53e9f HEAD@{7}: reset: moving to 7a53e9f
+3b81dda HEAD@{8}: checkout: moving from master to fix-B
+7a53e9f HEAD@{9}: checkout: moving from fix-B to master
+3b81dda HEAD@{10}: commit: Fix B
+7a53e9f HEAD@{11}: checkout: moving from master to fix-B
+7a53e9f HEAD@{12}: reset: moving to 7a53e9fe135340d1f59a1c7fb472974735860669
+0fa1355 HEAD@{13}: merge feature-A: Merge made by the 'recursive' strategy.
+7a53e9f HEAD@{14}: checkout: moving from feature-A to master
+4023359 HEAD@{15}: checkout: moving from master to feature-A
+7a53e9f HEAD@{16}: checkout: moving from feature-A to master
+4023359 HEAD@{17}: commit: Add feature-A
+7a53e9f HEAD@{18}: checkout: moving from master to feature-A
+7a53e9f HEAD@{19}: commit: 突然想起来今天七夕节，汪汪
+59dac23 HEAD@{20}: commit (initial): First commit
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git reset --hard 0fa1355
+HEAD is now at 0fa1355 Merge branch 'feature-A'
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git merge --no-ff fix-B
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cat README.md 
+#Git教程
+
+
+<<<<<<< HEAD
+	- feature-A
+=======
+	- fix-B
+>>>>>>> fix-B
+kangzhidongdeMacBook-Pro:git-tutorial kang$ vi README.md 
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git add README.md 
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git commit -m "Fix confict"
+[master a0997f6] Fix confict
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git commit --amend
+[master 63cedb2] Merge branch 'fix-B'
+ Date: Tue Aug 9 19:37:08 2016 +0800
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git log --graph
+*   commit 63cedb270c065b17ebc087919220dc131918e15a
+|\  Merge: 0fa1355 3b81dda
+| | Author: kang <kzd666@163.com>
+| | Date:   Tue Aug 9 19:37:08 2016 +0800
+*   commit 63cedb270c065b17ebc087919220dc131918e15a
+|\  Merge: 0fa1355 3b81dda
+| | Author: kang <kzd666@163.com>
+| | Date:   Tue Aug 9 19:37:08 2016 +0800
+| | 
+| |     Merge branch 'fix-B'
+| |   
+| * commit 3b81dda47b3d43358badf3a0d5e9163b7ded9d2a
+| | Author: kang <kzd666@163.com>
+| | Date:   Tue Aug 9 18:06:37 2016 +0800
+| | 
+| |     Fix B
+| |     
+* |   commit 0fa1355f2d840c6c13451d6a1cff4b8f1131ea6d
+|\ \  Merge: 7a53e9f 4023359
+| |/  Author: kang <kzd666@163.com>
+|/|   Date:   Tue Aug 9 17:57:39 2016 +0800
+| |   
+| |       Merge branch 'feature-A'
+| |   
+| * commit 40233594b2d5d3fed82b1d17e4e8ab4753069824
+|/  Author: kang <kzd666@163.com>
+|   Date:   Tue Aug 9 17:48:05 2016 +0800
+|   
+|       Add feature-A
+|  
+* commit 7a53e9fe135340d1f59a1c7fb472974735860669
+| Author: kang <kzd666@163.com>
+| Date:   Tue Aug 9 15:54:42 2016 +0800
+| 
+|     突然想起来今天七夕节，汪汪
+|     
+|     七夕快乐！
+|  
+* commit 59dac2365d9df2f0a7934b9f241802308d58e195
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git checkout -b feature-C
+Switched to a new branch 'feature-C'
+kangzhidongdeMacBook-Pro:git-tutorial kang$ ls
+README.md	七夕快乐
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cat README.md 
+#Git教程
+
+
+	- feature-A
+
+	- fix-B
+
+kangzhidongdeMacBook-Pro:git-tutorial kang$ vi C
+kangzhidongdeMacBook-Pro:git-tutorial kang$ ls
+README.md	七夕快乐
+kangzhidongdeMacBook-Pro:git-tutorial kang$ vi README.md 
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git commit -am "Add feature-C"
+[feature-C 7f49b9a] Add feature-C
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git diff
+kangzhidongdeMacBook-Pro:git-tutorial kang$ vi README.md 
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git diff
+diff --git a/README.md b/README.md
+index ac719a9..6e88c27 100644
+--- a/README.md
++++ b/README.md
+@@ -6,3 +6,6 @@
+        - fix-B
+        
+        - faeture-c 
++
++
++       -feature-C
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git commit -am "Fix typo"
+[feature-C 317322d] Fix typo
+ 1 file changed, 3 insertions(+)
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git rebase -i HEAD-2
+fatal: Needed a single revision
+invalid upstream HEAD-2
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git rebase -i HEAD~2
+[detached HEAD ba42917] Add feature-C
+ Date: Tue Aug 9 19:57:54 2016 +0800
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+Successfully rebased and updated refs/heads/feature-C.
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git log --graph
+* commit ba429177caa32792858d9b059988172340589a00
+| Author: kang <kzd666@163.com>
+| Date:   Tue Aug 9 19:57:54 2016 +0800
+| 
+|     Add feature-C
+|    
+*   commit 63cedb270c065b17ebc087919220dc131918e15a
+|\  Merge: 0fa1355 3b81dda
+| | Author: kang <kzd666@163.com>
+| | Date:   Tue Aug 9 19:37:08 2016 +0800
+| | 
+| |     Merge branch 'fix-B'
+| |   
+| * commit 3b81dda47b3d43358badf3a0d5e9163b7ded9d2a
+| | Author: kang <kzd666@163.com>
+| | Date:   Tue Aug 9 18:06:37 2016 +0800
+| | 
+| |     Fix B
+| |     
+* |   commit 0fa1355f2d840c6c13451d6a1cff4b8f1131ea6d
+|\ \  Merge: 7a53e9f 4023359
+| |/  Author: kang <kzd666@163.com>
+|/|   Date:   Tue Aug 9 17:57:39 2016 +0800
+| |   
+| |       Merge branch 'feature-A'
+| |   
+| * commit 40233594b2d5d3fed82b1d17e4e8ab4753069824
+|/  Author: kang <kzd666@163.com>
+|   Date:   Tue Aug 9 17:48:05 2016 +0800
+|   
+|       Add feature-A
+|  
+* commit 7a53e9fe135340d1f59a1c7fb472974735860669
+| Author: kang <kzd666@163.com>
+| Date:   Tue Aug 9 15:54:42 2016 +0800
+| 
+|     突然想起来今天七夕节，汪汪
+|     
+|     七夕快乐！
+|  
+* commit 59dac2365d9df2f0a7934b9f241802308d58e195
+  Author: kang <kzd666@163.com>
+  Date:   Tue Aug 9 11:18:35 2016 +0800
+  
+      First commit
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git checkout master
+Switched to branch 'master'
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git merge --no-ff feature-C
+Merge made by the 'recursive' strategy.
+ README.md | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git remote add origin https://github.com/KangZhiDong/git-tutorial.git
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git branch
+  feature-A
+  feature-C
+  fix-B
+* master
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git push -u origin master
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (19/19), 1.75 KiB | 0 bytes/s, done.
+Total 19 (delta 2), reused 0 (delta 0)
+To https://github.com/KangZhiDong/git-tutorial.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cat README.md 
+#Git教程
+
+
+	- feature-A
+	
+	- fix-B
+	
+	- faeture-c 
+
+
+	-feature-C
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git checkout -b feature-D
+Switched to a new branch 'feature-D'
+kangzhidongdeMacBook-Pro:git-tutorial kang$ push -u origin feature-D
+-bash: push: command not found
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git push -u origin feature-D
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/KangZhiDong/git-tutorial.git
+ * [new branch]      feature-D -> feature-D
+Branch feature-D set up to track remote branch feature-D from origin.
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cd ..
+kangzhidongdeMacBook-Pro:~ kang$ ls
+AndroidStudioProjects		LearningGitandGitHub		eclipse
+Applications			Library				git-tutorial
+Applications (Parallels)	Movies				ios
+Desktop				Music				kangzhidong.github.io
+Documents			Pictures
+Downloads			Public
+kangzhidongdeMacBook-Pro:~ kang$ cd Documents/
+kangzhidongdeMacBook-Pro:Documents kang$ ls
+Axure				Spring_in_Action_4.pdf		SpringiA4_SourceCode.zip
+Axure User Data			SpringiA4_CH12.pdf		workspace
+Parallels			SpringiA4_CH21.pdf		终端存储的输出.txt
+kangzhidongdeMacBook-Pro:Documents kang$ git clone https://github.com/KangZhiDong/git-tutorial.git
+Cloning into 'git-tutorial'...
+remote: Counting objects: 19, done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 19 (delta 2), reused 19 (delta 2), pack-reused 0
+Unpacking objects: 100% (19/19), done.
+Checking connectivity... done.
+kangzhidongdeMacBook-Pro:Documents kang$ git branch
+fatal: Not a git repository (or any of the parent directories): .git
+kangzhidongdeMacBook-Pro:Documents kang$ git branch -a
+fatal: Not a git repository (or any of the parent directories): .git
+kangzhidongdeMacBook-Pro:Documents kang$ ls
+Axure				SpringiA4_CH12.pdf		workspace
+Axure User Data			SpringiA4_CH21.pdf		终端存储的输出.txt
+Parallels			SpringiA4_SourceCode.zip
+Spring_in_Action_4.pdf		git-tutorial
+kangzhidongdeMacBook-Pro:Documents kang$ cd git-tutorial/
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/feature-D
+  remotes/origin/master
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git checkout -b feature -D origin/feature-D
+error: unknown switch `D'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -q, --quiet           suppress progress reporting
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --detach              detach the HEAD at named commit
+    -t, --track           set upstream info for new branch
+    --orphan <new-branch>
+                          new unparented branch
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -f, --force           force checkout (throw away local modifications)
+    -m, --merge           perform a 3-way merge with the new branch
+    --overwrite-ignore    update ignored files (default)
+    --conflict <style>    conflict style (merge or diff3)
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    --progress            force progress reporting
+
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git checkout -b feature-D origin/feature-D
+Branch feature-D set up to track remote branch feature-D from origin.
+Switched to a new branch 'feature-D'
+kangzhidongdeMacBook-Pro:git-tutorial kang$ vi README.md 
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git diff
+diff --git a/README.md b/README.md
+index 6e88c27..bae04e5 100644
+--- a/README.md
++++ b/README.md
+@@ -1,5 +1,5 @@
+ #Git教程
+-
++       test
+ 
+        - feature-A
+        
+kangzhidongdeMacBook-Pro:git-tutorial kang$ vi README.md 
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git diff
+diff --git a/README.md b/README.md
+index 6e88c27..dfc17d4 100644
+--- a/README.md
++++ b/README.md
+@@ -7,5 +7,6 @@
+        
+        - faeture-c 
+ 
+-
+        -feature-C
++       
++       -feature-D
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git commit -am "Add feature-D"
+[feature-D 76a5674] Add feature-D
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 327 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/KangZhiDong/git-tutorial.git
+   d7fa693..76a5674  feature-D -> feature-D
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cd ..
+kangzhidongdeMacBook-Pro:Documents kang$ cd git-tutorial/
+kangzhidongdeMacBook-Pro:git-tutorial kang$ ls
+README.md	七夕快乐
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git branch
+* feature-D
+  master
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cat README.md 
+#Git教程
+
+
+	- feature-A
+	
+	- fix-B
+	
+	- faeture-c 
+
+	-feature-C
+	
+	-feature-D
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cd ..
+kangzhidongdeMacBook-Pro:Documents kang$ ls
+Axure				SpringiA4_CH12.pdf		workspace
+Axure User Data			SpringiA4_CH21.pdf		终端存储的输出.txt
+Parallels			SpringiA4_SourceCode.zip
+Spring_in_Action_4.pdf		git-tutorial
+kangzhidongdeMacBook-Pro:Documents kang$ cd ..
+kangzhidongdeMacBook-Pro:~ kang$ cd git-tutorial/
+kangzhidongdeMacBook-Pro:git-tutorial kang$ ls
+README.md	七夕快乐
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cat README.md 
+#Git教程
+
+
+	- feature-A
+	
+	- fix-B
+	
+	- faeture-c 
+
+
+	-feature-C
+kangzhidongdeMacBook-Pro:git-tutorial kang$ git pull origin feature-D
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/KangZhiDong/git-tutorial
+ * branch            feature-D  -> FETCH_HEAD
+   d7fa693..76a5674  feature-D  -> origin/feature-D
+Updating d7fa693..76a5674
+Fast-forward
+ README.md | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+kangzhidongdeMacBook-Pro:git-tutorial kang$ cd ..
+kangzhidongdeMacBook-Pro:~ kang$ cd LearningGitandGitHub/
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ ls
+README.md	hello_word.php
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ git remote add origin https://github.com/KangZhiDong/LearningGitandGitHub
+fatal: remote origin already exists.
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ git remote add learn https://github.com/KangZhiDong/LearningGitandGitHub
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ git push -u learn master
+Branch master set up to track remote branch master from learn.
+Everything up-to-date
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ cat README.md 
+# LearningGitandGitHub
+在看《Github入门与实践》，以前学习的知识点总是很零碎，这次系统学习一下
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ vi README.md 
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ git commit -am "学习资料"
+[master 2e87122] 学习资料
+ 1 file changed, 5 insertions(+)
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 357 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/KangZhiDong/LearningGitandGitHub
+   1952f54..2e87122  master -> master
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ ping http://spring.io
+ping: cannot resolve http://spring.io: Unknown host
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ ping spring.io
+PING spring.io (104.20.2.240): 56 data bytes
+64 bytes from 104.20.2.240: icmp_seq=0 ttl=51 time=88.438 ms
+64 bytes from 104.20.2.240: icmp_seq=1 ttl=51 time=134.717 ms
+^C
+--- spring.io ping statistics ---
+2 packets transmitted, 2 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 88.438/111.578/134.717/23.139 ms
+kangzhidongdeMacBook-Pro:LearningGitandGitHub kang$ cd ..
+kangzhidongdeMacBook-Pro:~ kang$ git clone https://github.com/KangZhiDong/first-pr.git
+Cloning into 'first-pr'...
+remote: Counting objects: 2013, done.
+remote: Compressing objects: 100% (81/81), done.
+remote: Total 2013 (delta 47), reused 0 (delta 0), pack-reused 1932
+Receiving objects: 100% (2013/2013), 465.69 KiB | 172.00 KiB/s, done.
+Resolving deltas: 100% (1303/1303), done.
+Checking connectivity... done.
+kangzhidongdeMacBook-Pro:~ kang$ ls
+AndroidStudioProjects		LearningGitandGitHub		eclipse
+Applications			Library				first-pr
+Applications (Parallels)	Movies				git-tutorial
+Desktop				Music				ios
+Documents			Pictures			kangzhidong.github.io
+Downloads			Public
+kangzhidongdeMacBook-Pro:~ kang$ cd first-pr/
+kangzhidongdeMacBook-Pro:first-pr kang$ ls
+README.md	images		index.html	javascripts	params.json	stylesheets
+kangzhidongdeMacBook-Pro:first-pr kang$ cat README.md 
+# GitHub实践入门 ~ Pull Request引发的开发变革
+
+特设网站
+
+  [http://ituring.github.io/first-pr/](http://ituring.github.io/first-pr/)
+
+Git冲突时的解决方法
+
+-  [Resolving merge conflicts](https://help.github.com/articles/resolving-merge-conflicts/)
+-  [Resolving a merge conflict from the command line](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/)
+kangzhidongdeMacBook-Pro:first-pr kang$ vi index.html 
+kangzhidongdeMacBook-Pro:first-pr kang$ git branch -a
+* gh-pages
+  remotes/origin/HEAD -> origin/gh-pages
+  remotes/origin/feature/move-jquery-from-cdn-to-local
+  remotes/origin/gh-pages
+kangzhidongdeMacBook-Pro:first-pr kang$ git checkout -b work gh-pages
+Switched to a new branch 'work'
+kangzhidongdeMacBook-Pro:first-pr kang$ git branch-a
+git: 'branch-a' is not a git command. See 'git --help'.
+kangzhidongdeMacBook-Pro:first-pr kang$ git branch -a
+  gh-pages
+* work
+  remotes/origin/HEAD -> origin/gh-pages
+  remotes/origin/feature/move-jquery-from-cdn-to-local
+  remotes/origin/gh-pages
+kangzhidongdeMacBook-Pro:first-pr kang$ ls
+README.md	images		index.html	javascripts	params.json	stylesheets
+kangzhidongdeMacBook-Pro:first-pr kang$ vi index.html 
+kangzhidongdeMacBook-Pro:first-pr kang$ git diff
+diff --git a/index.html b/index.html
+index f8e09d0..39912f9 100644
+--- a/index.html
++++ b/index.html
+@@ -77,6 +77,7 @@
+ <p>(现共有<span id="impression_num"></span>条用户来稿)</p>
+ <p class="impression">just try pull request --by 00x00x00x</p>
+ <p class="impression">非常好的入门资料，还可以指导大家亲自试试！ -- jb</p>
++<p class="impression">谢谢作者和译者！第一次尝试pull request (<a href="https://github.com/KangZhiDong">@KangZhiDong</a>)</p>
+ <p class="impression">这本书很不错，学习了git相关知识，那个learngitbranching的网页做的很不错(<a href="https://github.com/gonglijian600">@GeorgeGong</a> @2016-08-07)</p>
+ <p class="impression">《github入门与实践》很好，赞~~~(<a href="https://github.com/Lshango">@LshangoWon</a>)，2016/08/03 </p>
+ <p class="impression">对于初学者的我来说，很赞的福利!!!--->(<a href="https://github.com/LuHanjia">@LuHanjia</a>)</p>
+kangzhidongdeMacBook-Pro:first-pr kang$ git add index.html 
+kangzhidongdeMacBook-Pro:first-pr kang$ git commit -m "Add my impression"
+[work cb13647] Add my impression
+ 1 file changed, 1 insertion(+)
+kangzhidongdeMacBook-Pro:first-pr kang$ git push origin work
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 317 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To https://github.com/KangZhiDong/first-pr.git
+ * [new branch]      work -> work
+kangzhidongdeMacBook-Pro:first-pr kang$ git branch -a
+  gh-pages
+* work
+  remotes/origin/HEAD -> origin/gh-pages
+  remotes/origin/feature/move-jquery-from-cdn-to-local
+  remotes/origin/gh-pages
+  remotes/origin/work
+kangzhidongdeMacBook-Pro:first-pr kang$ git fetch origin
+kangzhidongdeMacBook-Pro:first-pr kang$ git merge origin/master
+merge: origin/master - not something we can merge
+kangzhidongdeMacBook-Pro:first-pr kang$ brew install hub
+-bash: brew: command not found
+kangzhidongdeMacBook-Pro:first-pr kang$ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+curl: (22) The requested URL returned error: 404 Not Found
+kangzhidongdeMacBook-Pro:first-pr kang$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+==> This script will install:
+/usr/local/bin/brew
+/usr/local/Library/...
+/usr/local/share/doc/homebrew
+/usr/local/share/man/man1/brew.1
+/usr/local/share/zsh/site-functions/_brew
+/usr/local/etc/bash_completion.d/brew
+==> The following directories will be made group writable:
+/usr/local/.
+/usr/local/bin
+/usr/local/share
+/usr/local/share/man
+/usr/local/share/man/man8
+==> The following directories will have their owner set to kang:
+/usr/local/.
+/usr/local/bin
+/usr/local/share
+/usr/local/share/man
+/usr/local/share/man/man8
+==> The following directories will have their group set to admin:
+/usr/local/.
+/usr/local/bin
+/usr/local/share
+/usr/local/share/man
+/usr/local/share/man/man8
+
+Press RETURN to continue or any other key to abort
+==> /usr/bin/sudo /bin/chmod g+rwx /usr/local/. /usr/local/bin /usr/local/share /usr/local/share/man /usr/local/share/man/man8
+
+WARNING: Improper use of the sudo command could lead to data loss
+or the deletion of important system files. Please double-check your
+typing when using sudo. Type "man sudo" for more information.
+
+To proceed, enter your password, or type Ctrl-C to abort.
+
+Password:
+==> /usr/bin/sudo /usr/sbin/chown kang /usr/local/. /usr/local/bin /usr/local/share /usr/local/share/man /usr/local/share/man/man8
+==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local/. /usr/local/bin /usr/local/share /usr/local/share/man /usr/local/share/man/man8
+==> /usr/bin/sudo /bin/mkdir -p /Users/kang/Library/Caches/Homebrew
+==> /usr/bin/sudo /bin/chmod g+rwx /Users/kang/Library/Caches/Homebrew
+==> /usr/bin/sudo /usr/sbin/chown kang /Users/kang/Library/Caches/Homebrew
+==> Downloading and installing Homebrew...
+remote: Counting objects: 532, done.
+remote: Compressing objects: 100% (473/473), done.
+remote: Total 532 (delta 32), reused 326 (delta 28), pack-reused 0
+Receiving objects: 100% (532/532), 802.72 KiB | 117.00 KiB/s, done.
+Resolving deltas: 100% (32/32), done.
+From https://github.com/Homebrew/brew
+ * [new branch]      master     -> origin/master
+HEAD is now at 5f4111d utils/analytics.sh: tweak output in debug mode
+==> Tapping homebrew/core
+Cloning into '/usr/local/Library/Taps/homebrew/homebrew-core'...
+remote: Counting objects: 3718, done.
+remote: Compressing objects: 100% (3605/3605), done.
+remote: Total 3718 (delta 15), reused 1884 (delta 4), pack-reused 0
+Receiving objects: 100% (3718/3718), 2.88 MiB | 518.00 KiB/s, done.
+Resolving deltas: 100% (15/15), done.
+Checking connectivity... done.
+Tapped 3596 formulae (3,744 files, 9.0M)
+==> Installation successful!
+==> Next steps
+Run `brew help` to get started
+Further documentation: https://git.io/brew-docs
+==> Homebrew has enabled anonymous aggregate user behaviour analytics
+Read the analytics documentation (and how to opt-out) here:
+  https://git.io/brew-analytics
+kangzhidongdeMacBook-Pro:first-pr kang$ brew 
+Example usage:
+  brew search [TEXT|/REGEX/]
+  brew (info|home|options) [FORMULA...]
+  brew install FORMULA...
+  brew update
+  brew upgrade [FORMULA...]
+  brew uninstall FORMULA...
+  brew list [FORMULA...]
+
+Troubleshooting:
+  brew config
+  brew doctor
+  brew install -vd FORMULA
+
+Brewing:
+  brew create [URL [--no-fetch]]
+  brew edit [FORMULA...]
+  https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Formula-Cookbook.md
+
+Further help:
+  man brew
+  brew help [COMMAND]
+  brew home
+kangzhidongdeMacBook-Pro:first-pr kang$ brew install hub
+==> Downloading https://homebrew.bintray.com/bottles/hub-2.2.3.el_capitan.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring hub-2.2.3.el_capitan.bottle.tar.gz
+==> Caveats
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+zsh completion has been installed to:
+  /usr/local/share/zsh/site-functions
+==> Summary
+🍺  /usr/local/Cellar/hub/2.2.3: 9 files, 10.3M
+kangzhidongdeMacBook-Pro:first-pr kang$ ls
+README.md	images		index.html	javascripts	params.json	stylesheets
+kangzhidongdeMacBook-Pro:first-pr kang$ ls -al
+total 88
+drwxr-xr-x   9 kang  staff    306  8 10 10:23 .
+drwxr-xr-x+ 39 kang  staff   1326  8 10 10:23 ..
+drwxr-xr-x  15 kang  staff    510  8 10 12:08 .git
+-rw-r--r--   1 kang  staff    407  8 10 09:41 README.md
+drwxr-xr-x   7 kang  staff    238  8 10 09:41 images
+-rw-r--r--   1 kang  staff  35157  8 10 10:23 index.html
+drwxr-xr-x   4 kang  staff    136  8 10 09:41 javascripts
+-rw-r--r--   1 kang  staff   2031  8 10 09:41 params.json
+drwxr-xr-x   4 kang  staff    136  8 10 09:41 stylesheets
+kangzhidongdeMacBook-Pro:first-pr kang$ cd ..
+kangzhidongdeMacBook-Pro:~ kang$ ls -al
+total 72
+drwxr-xr-x+ 39 kang  staff   1326  8 10 10:23 .
+drwxr-xr-x   6 root  admin    204  8  5 14:44 ..
+-r--------   1 kang  staff      9  8  5 14:42 .CFUserTextEncoding
+-rw-r--r--@  1 kang  staff  10244  8  9 23:21 .DS_Store
+drwx------  56 kang  staff   1904  8  9 19:54 .Trash
+drwxr-xr-x  12 kang  staff    408  8  7 19:57 .android
+-rw-r--r--   1 kang  staff   1106  8  8 23:58 .bash_history
+drwxr-xr-x  42 kang  staff   1428  8  9 00:16 .bash_sessions
+drwx------   5 kang  staff    170  8  8 05:01 .config
+drwxr-xr-x   3 kang  staff    102  8  7 20:25 .docker
+drwxr-xr-x   8 kang  staff    272  8  5 21:46 .eclipse
+-rw-------   1 kang  staff     16  8  7 17:30 .emulator_console_auth_token
+-rw-r--r--   1 kang  staff     63  8  9 09:04 .gitconfig
+drwxr-xr-x   5 kang  staff    170  8  7 16:38 .gradle
+drwxr-xr-x   3 kang  staff    102  8  8 05:01 .local
+drwxr-xr-x   6 kang  staff    204  8  8 03:48 .oracle_jre_usage
+drwxr-xr-x   8 kang  staff    272  8  9 08:57 .p2
+drwxr-xr-x  40 kang  staff   1360  8 10 08:58 .sogouinput
+drwx------   5 kang  staff    170  8  9 09:22 .ssh
+drwxr-xr-x   6 kang  staff    204  8  6 19:00 .subversion
+drwxr-xr-x   3 kang  staff    102  8  5 21:33 .tooling
+-rw-------   1 kang  staff   4530  8 10 10:23 .viminfo
+drwxr-xr-x   3 kang  staff    102  8  7 16:38 AndroidStudioProjects
+drwx------   5 kang  staff    170  8  5 17:16 Applications
+drwxr-xr-x@  5 kang  staff    170  8  7 19:49 Applications (Parallels)
+drwx------+  6 kang  staff    204  8  9 19:54 Desktop
+drwx------+ 14 kang  staff    476  8  9 20:50 Documents
+drwx------+ 29 kang  staff    986  8 10 08:27 Downloads
+drwxr-xr-x   5 kang  staff    170  8  9 21:13 LearningGitandGitHub
+drwx------@ 58 kang  staff   1972  8  8 03:29 Library
+drwx------+  3 kang  staff    102  8  5 14:42 Movies
+drwx------+  4 kang  staff    136  8  5 15:41 Music
+drwx------+  6 kang  staff    204  8  6 20:14 Pictures
+drwxr-xr-x+  5 kang  staff    170  8  5 14:42 Public
+drwxr-xr-x   4 kang  staff    136  8  7 23:35 eclipse
+drwxr-xr-x   9 kang  staff    306  8 10 10:23 first-pr
+drwxr-xr-x   5 kang  staff    170  8  9 21:01 git-tutorial
+drwxr-xr-x   3 kang  staff    102  8  7 19:48 ios
+drwxr-xr-x   5 kang  staff    170  8  9 15:30 kangzhidong.github.io
+kangzhidongdeMacBook-Pro:~ kang$ cd /usr/local
+kangzhidongdeMacBook-Pro:local kang$ ls
+CODEOFCONDUCT.md	Library			etc
+Cellar			README.md		opt
+LICENSE.txt		bin			share
+kangzhidongdeMacBook-Pro:local kang$ find Cellar
+Cellar
+Cellar/hub
+Cellar/hub/2.2.3
+Cellar/hub/2.2.3/bin
+Cellar/hub/2.2.3/bin/hub
+Cellar/hub/2.2.3/etc
+Cellar/hub/2.2.3/etc/bash_completion.d
+Cellar/hub/2.2.3/etc/bash_completion.d/hub.bash_completion.sh
+Cellar/hub/2.2.3/INSTALL_RECEIPT.json
+Cellar/hub/2.2.3/LICENSE
+Cellar/hub/2.2.3/README.md
+Cellar/hub/2.2.3/share
+Cellar/hub/2.2.3/share/man
+Cellar/hub/2.2.3/share/man/man1
+Cellar/hub/2.2.3/share/man/man1/hub.1
+Cellar/hub/2.2.3/share/man/man1/hub.1.html
+Cellar/hub/2.2.3/share/man/man1/hub.1.ronn
+Cellar/hub/2.2.3/share/zsh
+Cellar/hub/2.2.3/share/zsh/site-functions
+Cellar/hub/2.2.3/share/zsh/site-functions/_hub
+kangzhidongdeMacBook-Pro:local kang$ cd ~
+kangzhidongdeMacBook-Pro:~ kang$ ls
+AndroidStudioProjects		LearningGitandGitHub		eclipse
+Applications			Library				first-pr
+Applications (Parallels)	Movies				git-tutorial
+Desktop				Music				ios
+Documents			Pictures			kangzhidong.github.io
+Downloads			Public
+kangzhidongdeMacBook-Pro:~ kang$ hub --version
+git version 2.7.4 (Apple Git-66)
+hub version 2.2.3
+kangzhidongdeMacBook-Pro:~ kang$ vi .bash_profile
+kangzhidongdeMacBook-Pro:~ kang$ hub clone Hello-World
+github.com username: KangZhiDong
+github.com password for KangZhiDong (never stored): 
+Cloning into 'Hello-World'...
+fatal: remote error: 
+  Repository not found.
+kangzhidongdeMacBook-Pro:~ kang$ hub clone kangzhidong.github.io
+fatal: destination path 'kangzhidong.github.io' already exists and is not an empty directory.
+kangzhidongdeMacBook-Pro:~ kang$ hub browse https://github.com/KangZhiDong/spring-framework.git
+kangzhidongdeMacBook-Pro:~ kang$ open https://github.com/KangZhiDong/spring-framework.git
+kangzhidongdeMacBook-Pro:~ kang$ hub browse KangZhiDong/spring-framework.git
+kangzhidongdeMacBook-Pro:~ kang$ gem
+RubyGems is a sophisticated package manager for Ruby.  This is a
+basic help message containing pointers to more information.
+
+  Usage:
+    gem -h/--help
+    gem -v/--version
+    gem command [arguments...] [options...]
+
+  Examples:
+    gem install rake
+    gem list --local
+    gem build package.gemspec
+    gem help install
+
+  Further help:
+    gem help commands            list all 'gem' commands
+    gem help examples            show some examples of usage
+    gem help platforms           show information about platforms
+    gem help <COMMAND>           show help on COMMAND
+                                   (e.g. 'gem help install')
+    gem server                   present a web page at
+                                 http://localhost:8808/
+                                 with info about installed gems
+  Further information:
+    http://guides.rubygems.org
+kangzhidongdeMacBook-Pro:~ kang$ 
